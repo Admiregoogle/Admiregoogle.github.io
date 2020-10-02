@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="keywords" content="信息安全,网络安全,cdusec,CDUSEC">
+    <meta name="description" content="IT,信息安全,网络安全,Web安全,逆向工程,编程开发">
+    <meta name="baidu-site-verification" content="wsQgqPOyIi" />
+    <title>CDUSEC</title>
+    <link rel="shortcut icon" href="images/cduIco.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/headerStyle.css" rel="stylesheet">
+    <link href="css/contentStyle.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <script >
+        window.location.href="error/error.html";
+    </script>
+    <![endif]-->
+    <!--[if IE 8]>
+    <style>
+        .Home_bg{
+            background: url(images/bgImg1.jpg) no-repeat fixed;
+        }
+        #navbar-example>ul{
+            float: right;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target="#navbar-example" id="Home">
+<!--nav..-->
+<header class="navbar-fixed-top">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-example">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            　  <a href="index.html" style="display:inline-block"><img src="images/logo.png" class="img-responsive" alt="CDU"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-example">
+                <ul class="nav nav-tabs navbar-nav">
+                    <li class="active"><a href="#Home"><span class="glyphicon glyphicon-home" style="font-size: 80%"> </span> Home</a></li>
+                    <!--<li><a href="http://blog.cdusec.com"><span class="glyphicon glyphicon-home" style="font-size: 80%"></span> Blog</a></li>-->
+                    <li><a href="https://blog.cdusec.com"><span class="glyphicon glyphicon-home" style="font-size: 80%"></span> Blog</a></li>
+                    <li><a href="#Team"><span class="glyphicon glyphicon-user" style="font-size: 80%"></span> Team</a></li>
+                    <!--这是一段注释。<li><a href="https://ctf.cdusec.com"><span class="glyphicon glyphicon-flag" style="font-size: 80%"></span> CTF</a></li>注释不会在浏览器中显示。-->
+                    <li><a href="https://ctf.cdusec.com"><span class="glyphicon glyphicon-flag" style="font-size: 80%"></span> CTF</a></li>
+                    <li><a href="https://pms.cdusec.com"><span class="glyphicon glyphicon-user" style="font-size: 80%"></span> PMS</a></li>
+                    <!--这是一段注释。<li><a target="_blank" href="http:////shang.qq.com/wpa/qunwpa?idkey=165ada0a053b213772b50f829ddb556d4275b5dd89c92b83adcce69651f135a2"><span class="glyphicon glyphicon-plus-sign" style="font-size: 80%"></span> Join us</a></li>注释不会在浏览器中显示。-->
+                    <li><a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5w4J71M"><span class="glyphicon glyphicon-plus-sign" style="font-size: 80%"></span> Join us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section>
+    <!--Message-->
+    <div class="alert alert-info alert-dismissible text-center fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>欢迎访问CDESEC</strong>
+    </div>
+
+    <!--Home-->
+    <div class="Home_bg">
+        <div class="content_img container">
+            <div class="row">
+                <div class="img_first col-xs-6 col-sm-6 col-md-6 col-lg-6 Home_text">
+                    <h1>CDUSEC</h1>
+                    <div><kbd>-</kbd></div>
+                    <kbd>Security</kbd>
+                    <div><kbd>-</kbd></div>
+                    <p>日渐加剧的网络安全局势,小到个人,大到国家,都是一把致命的武器!我们努力为网络安全事业贡献一份微薄之力,共建安全之路!</p>
+                </div>
+                <div class="img_second col-xs-6 col-sm-6 col-md-6 col-lg-6 Home_img">
+                        <img src="images/homeImg.png" alt=" " class="img-responsive" style="width: 500px; opacity: 0.7">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--main-->
+    <div class="content_main">
+        <div id="Team"></div>
+        <img src="images/bottom.png" alt="" class="img-responsive main_img1">
+        <h1 class="text-center">发展情况</h1>
+        <div class="container-fluid main_container">
+            <div class="row">
+                <div class="panel panel-default col-sm-offset-8 col-xs-offset-6">
+                    <div class="panel-heading">
+                        <h2 class="panel-title"><strong>Future</strong></h2>
+                    </div>
+                    <div class="panel-body">
+                        ...
+                    </div>
+                </div>
+                <div class="panel panel-default col-sm-offset-7 col-xs-offset-5">
+                    <div class="panel-heading">
+                        <h2 class="panel-title"><strong>May, 2016</strong></h2>
+                    </div>
+                    <div class="panel-body">
+                        成立了CDUSEC，专注于信息安全竞赛
+                    </div>
+                </div>
+                <div class="panel panel-default col-sm-offset-6 col-xs-offset-4">
+                    <div class="panel-heading">
+                        <h2 class="panel-title"><strong>March, 2016</strong></h2>
+                    </div>
+                    <div class="panel-body">
+                        拥有了新生的第一批信息安全爱好者，每周在一起解疑答惑
+                    </div>
+                </div>
+                <div class="panel panel-default col-sm-offset-5 col-xs-offset-3">
+                    <div class="panel-heading">
+                        <h2 class="panel-title"><strong>December, 2015</strong></h2>
+                    </div>
+                    <div class="panel-body">
+                        成立了玄武安全
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Team-->
+    <div class="container-fluid Team_div">
+        <div class="row">
+            <!--Title-->
+            <div class="col-sm-12 Team_img1">
+                <img src="images/bottom.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-sm-12">
+                <h1 class="text-center">成员组</h1>
+            </div>
+        </div>
+        <!--defined id-->
+        <div id="Team_carousel" class="carousel slide Team_content row" data-ride="carousel" data-interval="4000" data-wrap="true" data-pause="null">
+            <!-- Indicators -->
+            <!--
+            <ol class="carousel-indicators">
+                <li data-target="#Team_carousel" data-slide-to="0"  class="active"></li>
+                <li data-target="#Team_carousel" data-slide-to="1"></li>
+                <li data-target="#Team_carousel" data-slide-to="3"></li>
+                <li data-target="#Team_carousel" data-slide-to="4"></li>
+                <li data-target="#Team_carousel" data-slide-to="5"></li>
+                <li data-target="#Team_carousel" data-slide-to="6"></li>
+                <li data-target="#Team_carousel" data-slide-to="7"></li>
+            </ol>
+            -->
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner col-sm-12 col-xs-12" role="listbox">
+                    <!--team member-->
+                    <div class="item active row" style="text-align: center">
+                        <div class="col-sm-6">
+                            <h2 class="text-center">erhuo</h2>
+                            <h3>14级软件工程学生(创始人)，擅长方向web渗透，漏洞挖掘，python开发，php代码审计</h3>
+                            <div class="text-center">
+                                <img src="images/Team/erhuo.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                                <small>--"喜欢旅行和烘焙，有一起做芝士蛋糕的吗？"</small>
+                            </h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="text-center">vae</h2>
+                            <h3>14级软件工程学生(创始人)，擅长方向逆向破解，病毒分析，漏洞挖掘</h3>
+                            <div class="text-center">
+                                <img src="images/Team/vae.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                            <small>--"go ahead"</small>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="item row" style="text-align: center">
+                        <div class="col-sm-6">
+                            <h2 class="text-center">y1ngshu</h2>
+                            <h3>15级软件工程学生，擅长方向web渗透，漏洞挖掘，编程。</h3>
+                            <div class="text-center">
+                                <img src="images/Team/y1ngshu.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                                <small>--"在书籍中漫步，在电影中沉浸，在音乐中陶醉，在旅行中体味"</small>
+                            </h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="text-center">zz</h2>
+                            <h3>15级电气工程及其自动化学生,主攻web渗透,html和php学习中</h3>
+                            <div class="text-center">
+                                <img src="images/Team/zz.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                            <small>--"发呆"</small>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="item row" style="text-align: center">
+                        <div class="col-sm-6">
+                            <h2 class="text-center">p4trick</h2>
+                            <h3>15级软件工程专业学生,擅长方向web渗透、漏洞挖掘、偶尔写写代码压压惊</h3>
+                            <div class="text-center">
+                                <img src="images/Team/p4trick.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                                <small>--"在书籍中漫步，在电影中沉浸，在音乐中陶醉，在旅行中体味"</small>
+                            </h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="text-center">hwan</h2>
+                            <h3>15级软件工程学生,擅长方向web渗透,漏洞挖掘,代码审计</h3>
+                            <div class="text-center">
+                                <img src="images/Team/hwan.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                            <small>--"一路向前跑,不回头,不停留"</small>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="item row" style="text-align: center">
+                        <div class="col-sm-6">
+                            <h2 class="text-center">ShenYan</h2>
+                            <h3>15级软件工程学生,擅长方向web渗透,linux,编程</h3>
+                            <div class="text-center">
+                                <img src="images/Team/Shenyan.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                                <small>--"迷途的羔羊总会发现曙光"</small>
+                            </h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="text-center">Desp4ir_m</h2>
+                            <h3>15级计算机科学与技术学生,擅长方向web渗透,漏洞挖掘</h3>
+                            <div class="text-center">
+                                <img src="images/Team/Desp4ir_m.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                            <small>--"If not me,who? If not now,when? Desp4ir is never in despair"</small>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="item row" style="text-align: center">
+                        <div class="col-sm-6">
+                            <h2 class="text-center">s7edge</h2>
+                            <h3>16级计算机科学与技术学生,擅长方向逆向破解,游戏外挂,程序开发</h3>
+                            <div class="text-center">
+                                <img src="images/Team/s7edge.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                                <small>--"不求与人相比,但求超越自己,要哭就哭出激动的泪水,要笑就笑出成长的性格"</small>
+                            </h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="text-center">iixcub</h2>
+                            <h3>16级学员,擅长方向web渗透,漏洞挖掘</h3>
+                            <div class="text-center">
+                                <img src="images/Team/iixcub.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                            <small>--"人还是要积极向上乐于助人地活着"</small>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="item row" style="text-align: center">
+                        <div class="col-sm-6">
+                            <h2 class="text-center">yuhao</h2>
+                            <h3>16级软件工程学生,擅长方向web渗透,shell提取,程序开发</h3>
+                            <div class="text-center">
+                                <img src="images/Team/yuhao.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                                <small>--"海纳百川,有容乃大"</small>
+                            </h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="text-center">sagapo</h2>
+                            <h3>16级计算机科学与技术学生,擅长方向web渗透</h3>
+                            <div class="text-center">
+                                <img src="images/Team/sagapo.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                            <small>--"没有梦想就没有远方"</small>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="item row" style="text-align: center">
+                        <div class="col-sm-6">
+                            <h2 class="text-center">wat</h2>
+                            <h3>16级计算机科学与技术学生,擅长方向web安全,编程</h3>
+                            <div class="text-center">
+                                <img src="images/Team/wat.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                                <small>--"偶尔看看国产剧,听音乐"</small>
+                            </h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="text-center">9renade_b00m</h2>
+                            <h3>16级计算机科学与技术学生,擅长方向web渗透,漏洞挖掘</h3>
+                            <div class="text-center">
+                                <img src="images/Team/9renade_b00m.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                            <small>--"jay-chou"</small>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="item row" style="text-align: center">
+                        <div class="col-sm-6">
+                            <h2 class="text-center">XTeddy</h2>
+                            <h3>16级计算机科学与技术学生,擅长方向web编程,web安全</h3>
+                            <div class="text-center">
+                                <img src="images/Team/XTeddy.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                                <small>--"对新鲜事物有好感,爱生活,爱交友,爱计算机,爱美..."</small>
+                            </h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="text-center" style="color: white">.</h2>
+                            <h3 style="color: white">.</h3>
+                            <div class="text-center">
+                                <img src="images/Team/welcome.jpg" alt="" class="img-circle">
+                            </div>
+                            <h4 class="text-center">
+                                <small style="color: white">.</small>
+                            </h4>
+                        </div>
+                    </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#Team_carousel" style="width: 10%" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only" style="float: right">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#Team_carousel" style="width: 10%" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div>
+        <h3>友情链接:</h3>
+        <ul>
+            <li><a href="https://writeup.cn">iixcub</a></li>
+            <li><a href="http://0xyuhao.xyz">yuhao</a></li>
+            <li><a href="https://security.jd.com/#">JDSRC</a></li>
+            <li><a href="https://www.cdusec.com/#">Powered by: Chengdu University Secure</a></li>
+        </ul>
+    </div>
+    <div>
+        COPYRIGHT &copy; 2020 <strong>CDUSEC.</strong><br/>
+        <a href="http://www.miit.gov.cn/">蜀ICP备19008505号-2</a>
+    </div>
+</footer>
+<!-- 
+<script>
+    //Listening to the .alert
+    window.setTimeout(function(){
+        $('[data-dismiss="alert"]').alert('close');
+    },3000);
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<!-- 记得在此处添加信息 -->
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277862790'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1277862790%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+body{-moz-user-select:none;}
+h1,h2{
+    text-shadow: 0 0 2px #212121;
+}
+h3{
+    font: 600 1.2em 宋体
+}
+.Home_bg{
+    background: url(../images/bgImg.jpg) no-repeat fixed;
+    -webkit-background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    -o-background-size:100% 100%;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.content_img{
+    padding: 6% 0 0;
+    z-index: 1000;
+}
+.img_first h1{
+    letter-spacing: 5px;
+    margin: 10% 0;
+    font: oblique 900 4em "Courier New",sans-serif;
+}
+.img_first kbd{
+    text-align: center;
+}
+.img_first p{
+    padding-top: 13%;
+    margin-top: 10%;
+    font: 500 1.4em sans-serif;
+    line-height: 2.2;
+    text-shadow: 0 0 1px #333333;
+}
+
+/*Home(.img_first)字体动画效果*/
+.Home_text{
+    -moz-animation: home_text 2s forwards;
+    -o-animation: home_text 2s forwards;
+    -webkit-animation: home_text 2s forwards;
+    animation: home_text 2s forwards;
+}
+/*Home(.img_second img)图片动画效果*/
+.Home_img{
+    -moz-animation: home_img 2s forwards;
+    -o-animation: home_img 2s forwards;
+    -webkit-animation: home_img 2s forwards;
+    animation: home_img 2s forwards;
+}
+.Home_img2{
+    -moz-animation: home_img2 2s ease 2s infinite;
+    -webkit-animation: home_img2 2s ease 2s infinite;
+    -o-animation: home_img2 2s ease 2s infinite;
+    animation: home_img2 2s ease 2s infinite;
+}
+/*Team development*/
+.content_main{
+    background: #fefefe url(../images/mainRun.png) no-repeat 0 40%;
+    -webkit-background-size:35% 70%;
+    -moz-background-size:35% 70%;
+    -o-background-size:35% 70%;
+    background-size: 35% 70%;
+    margin:2em 0 0;
+    width:100%;
+}
+.content_img{
+    height: 100vh;
+}
+.main_img1{
+    display:block;
+    margin: 0 auto;
+    -webkit-animation: main_img1 2s ease-in-out infinite;
+    -moz-animation: main_img1 2s ease-in-out infinite;
+    -o-animation: main_img1 2s ease-in-out infinite;
+    animation: main_img1 2s ease-in-out infinite;
+}
+.content_main h1{
+    margin-top: .5em;
+}
+.main_container{
+    margin-top: 10px;
+}
+.main_container .panel:hover{
+    cursor: context-menu;
+    -webkit-box-shadow: -5px 5px 5px #c2c5ca;
+    -moz-box-shadow: -5px 5px 5px #c2c5ca;
+    box-shadow: -5px 5px 5px #c2c5ca;
+}
+.main_container .panel .panel-heading{
+    background-color: #dde2e6;
+}
+.main_container .panel:hover .panel-heading{
+    background-color: #d8d8d8;
+}
+
+/*Team members*/
+.Team_img1{
+    margin: 2em auto 1.5em;
+}
+.Team_img1 img{
+    margin: 0 auto;
+    -webkit-animation: main_img1 2s ease-in-out infinite;
+    -moz-animation: main_img1 2s ease-in-out infinite;
+    -o-animation: main_img1 2s ease-in-out infinite;
+    animation: main_img1 2s ease-in-out infinite;
+}
+.Team_content .carousel-inner img{
+    width: 100px;
+}
+.carousel .carousel-inner{
+    margin-top: 5em;
+    height: 350px;
+}
+.Team_content .carousel-inner h2{
+    text-shadow: 0 2px 1px rgba(42, 42, 42, 0.68);
+    font-weight: 300;
+    color: #636363;
+}
+.Team_content .carousel-inner h3{
+    color: #717171;
+}
+.carousel-inner .item h4{
+    margin-top: 2em;
+}
+.carousel .carousel-inner .item .col-sm-6>div{
+    position:relative;
+}
+
+/*footer*/
+.footer{
+    background: #000000;
+    width:100%;
+    height:120px;
+}
+.footer h3{
+    color: #9e9e9e;
+    text-align: center;
+    margin:0;
+    padding-top: 20px;
+}
+.footer ul{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    padding-left: 0;
+}
+.footer ul li{
+    color: #9e9e9e;
+    list-style: none;
+    display: inline-block;
+    margin-right:10px;
+}
+.footer ul li a{
+    color: #dadada;
+}
+.footer div:last-child a:hover{
+    color:#9e9e9e;
+    text-decoration: none;
+}
+.footer ul li a:hover{
+    color:#9e9e9e;
+    text-shadow: 0 0 2px black;
+}
+.footer div:last-child{
+    height: 50%;
+    background: #000000;
+    text-align: center;
+    color: #9e9e9e;
+    font-weight: 300;
+    padding-top: 10px;
+}
+.footer div:last-child a{
+
+    color: #dadada;
+}
+.footer div strong{
+    font-weight: 900;
+}
+/*990px*/
+@media screen and (max-width: 992px){
+    .img_first p{
+        font: 500 1.2em sans-serif;
+        line-height: 2.1;
+    }
+    .img_second img{
+        padding-top: 5em;
+    }
+}
+/*小于等于768px*/
+@media screen and (max-width: 768px){
+    header{
+        position: static !important;
+    }
+    .navbar-fixed-top .navbar-default .container .navbar-header a{
+        margin-top: 7px;
+    }
+    .navbar-fixed-top .navbar-default .container .navbar-header img{
+
+        width: 130px;
+        height: 36px;
+    }
+    .content_main h1,.Team_div h1{
+        font-size: 2em;
+    }
+    /*Home*/
+    .img_first h1{
+        color: #424242;
+        width: 100vw;
+        text-align: center;
+        font: 900 210% sans-serif;
+    }
+    .img_first p{
+        font: 500 1.1em sans-serif;
+    }
+    .img_second img{
+        padding-top: 12em;
+    }
+    .main_img1{
+        width: 35px;
+        height: 40px;
+    }
+    .Team_img1 img{
+        width: 35px;
+        height: 40px;
+    }
+    .Team_content .carousel-inner{
+        height:auto;
+    }
+    .Team_content .carousel-inner h2{
+        text-shadow: 0 2px 1px rgba(42, 42, 42, 0.68);
+        font-size: 1.5em;
+        font-weight: 300;
+        margin-top:5px;
+    }
+    .Team_content .carousel-inner h3{
+        font-size: .9em;
+    }
+    .Team_content .carousel-inner img{
+        width: 50px;
+        height: 50px;
+    }
+    .Team_content .carousel-inner h4{
+        font-size: 1em;
+        margin-top:5px;
+        margin-bottom:20px;
+    }
+    .footer{
+        height: 70px;
+    }
+    .footer h3{
+        font-size: 1em;
+    }
+    .footer a{
+        font-size:.9em;
+    }
+    .footer div ul{
+        margin-top: 0;
+    }
+    .footer div:last-child{
+        font-size: .8em;
+        padding-top:0;
+    }
+}
