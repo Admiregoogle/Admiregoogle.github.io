@@ -1,8 +1,0 @@
-{
-	"server1" : "s.cdus.club",
-	"server" : "0.0.0.0",
-	"port" : "9998",
-	"password" : "000",
-	"localserver" : "127.0.0.1",
-	"localport" : "6064"
-}
